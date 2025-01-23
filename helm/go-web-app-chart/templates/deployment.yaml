@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: go-web-apps
-        image: hirudoc5/go-web-apps:v1
+        image: hirudoc5/go-web-apps:{{  .Values.image.tag }}
         ports:
         - containerPort: 80
