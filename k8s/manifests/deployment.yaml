@@ -1,0 +1,22 @@
+# deployment for application 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-web-apps
+  labels:
+    app: go-web-apps
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: go-web-apps
+  template:
+    metadata:
+      labels:
+        app: go-web-apps
+    spec:
+      containers:
+      - name: go-web-apps
+        image: hirudoc5/go-web-apps:v1
+        ports:
+        - containerPort: 80

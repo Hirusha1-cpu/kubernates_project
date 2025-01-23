@@ -1,0 +1,15 @@
+# service for application
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-web-apps
+  labels:
+    app: go-web-apps
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  selector:
+    app.kubernetes.io/name: MyApp
+  type: ClusterIP
