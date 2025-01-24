@@ -8,7 +8,7 @@ image:
   repository: hirudoc5/go-web-apps
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1"
+  tag: "12945216286"
 
 ingress:
   enabled: false
