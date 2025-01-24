@@ -21,4 +21,4 @@ docker run -p 8080:8080 -it hirudoc5/go-web-apps:v1
 docker build -t hirudoc5/go-web-apps:v1 .
 
 
-kubernates_project - git repo name
+kubernates_project - git repo names
